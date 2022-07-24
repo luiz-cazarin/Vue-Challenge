@@ -1,4 +1,4 @@
-# Vue-Challenge
+# Vue-Nuxt-Project-Challenge
 
 This project was created in order to show my skills when it comes to front-end development.
 ## Functionality
@@ -10,29 +10,16 @@ This project was created in order to show my skills when it comes to front-end d
 
 ## Technologies used 
 - Vue 3
+- Nuxt
 - Tailwind CSS
 
 # vue-tailwind
 
 ## Project setup
 ```
-yarn install
+yarn install or npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+yarn serve or npm run dev
