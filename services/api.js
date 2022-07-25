@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://gorest.co.in/public/v2/",
+  baseURL: "http://localhost:5000/",
 });
 
 export default api;

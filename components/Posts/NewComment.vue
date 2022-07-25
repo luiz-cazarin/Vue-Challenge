@@ -16,9 +16,9 @@
         <div>
           <div class="mt-1">
             <textarea
-              v-model="bodyText"
-              id="bodyText"
-              name="bodyText"
+              v-model="body"
+              id="body"
+              name="body"
               rows="4"
               maxlength="1200"
               class="
@@ -34,7 +34,7 @@
                 border-gray-300
                 rounded-md
               "
-              placeholder="Digite aqui!"
+              placeholder="Type here:"
             />
           </div>
         </div>
@@ -69,8 +69,8 @@
 export default {
   data() {
     return {
-      userName: "",
-      bodyText: "",
+      userName: null,
+      body: null,
       userAuth: false,
       user: null,
     };
@@ -87,15 +87,13 @@ export default {
   },
   methods: {
     newComment() {
-      if (this.bodyText !== "" && this.userAuth) {
-        const data = {
-          name: this.user.name,
-          email: this.user.email,
-          body: this.bodyText,
-        };
-        this.$emit("newComment", data);
-      }
-      this.bodyText = null;
+      const data = {
+        name: this.user.name,
+        email: this.user.email,
+        body: this.body,
+      };
+      this.$emit("newComment", data);
+      this.body = null;
     },
   },
 };

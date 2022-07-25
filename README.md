@@ -1,25 +1,28 @@
-# Vue-Nuxt-Project-Challenge
+# VueJS Developer Challenge - JSON SERVER VERSION
+In current version you can use json server to test
 
-This project was created in order to show my skills when it comes to front-end development.
 ## Functionality
 - CRUD
+- Create, Edit, Delete posts
+- Login
 - Register
-- Edit
-- Delete a list
 - Read and comment on posts
 
 ## Technologies used 
 - Vue 3
 - Nuxt
 - Tailwind CSS
-
-# vue-tailwind
+- Json server
 
 ## Project setup
 ```
 yarn install or npm install
 ```
 
-### Compiles and hot-reloads for development
+## To execute the project
 ```
 yarn serve or npm run dev
+```
+```
+json-server -p 5000 db.json
+```

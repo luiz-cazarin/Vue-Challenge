@@ -138,6 +138,7 @@ export default {
           email: this.email,
           password: this.password,
         };
+        // The api has no authentication, we are simulating it to be able to make the requests need the user's email
         const res = await api({
           method: "GET",
           url: `/users?email=${user.email}`,
@@ -155,6 +156,11 @@ export default {
           ); // default token, could not authenticate via (gorest.co.in)
           this.$router.push("/");
         }
+      } else {
+        this.alert = true;
+        setTimeout(() => {
+          this.alert = false;
+        }, 2000);
       }
     },
   },
