@@ -1,5 +1,5 @@
 # VueJS Developer Challenge - JSON SERVER VERSION
-In current version you can use json server to test
+In this version you can use json server to test
 
 ## Functionality
 - CRUD
